@@ -53,8 +53,6 @@ function setProperty(
     actionCssStr += `${actionCssStr ? " " : ""}${prefix}repeat-1`;
   }
 
-  console.log("animateCssVariable", animateCssVariable);
-
   for (const item of animateCssVariable) {
     el.style.setProperty.call(el.style, ...item);
   }
